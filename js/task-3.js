@@ -1,4 +1,10 @@
+const inputEnter = document.getElementById('name-input');
+const outputEnter = document.getElementById('name-output');
 
+inputEnter.addEventListener('input', () => {
+    let name = inputEnter.value.trim();
+    outputEnter.textContent = name || 'Anonymous';
+    });
 
 
 // Завдання 3
