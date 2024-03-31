@@ -42,3 +42,5 @@ elImage.alt = image.alt;
 elLi.appendChild(elImage);
 imagesGallery.appendChild(elLi)})
 
+
+
