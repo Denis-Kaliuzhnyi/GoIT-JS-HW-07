@@ -1,15 +1,15 @@
 const images = [
   {
-    url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    alt: 'White and Black Long Fur Cat',
+    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    alt: "White and Black Long Fur Cat",
   },
   {
-    url: 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
+    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    alt: "Orange and White Koi Fish Near Yellow Koi Fish",
   },
   {
-    url: 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    alt: 'Group of Horses Running',
+    url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    alt: "Group of Horses Running",
   },
   // {
   //   url:
@@ -28,19 +28,16 @@ const images = [
   // },
 ];
 
-const imagesGallery = document.querySelector('.gallery');
+const imagesGallery = document.querySelector(".gallery");
 
+images.forEach((image) => {
+  const elLi = document.createElement("li");
+  const elImage = document.createElement("img");
 
-images.forEach(image => {
+  elImage.src = image.url;
+  elImage.alt = image.alt;
 
-const elLi = document.createElement('li');
-const elImage = document.createElement('img');
+  elLi.appendChild(elImage);
+});
 
-elImage.src = image.url;
-elImage.alt = image.alt;
-
-elLi.appendChild(elImage);
-imagesGallery.appendChild(elLi)})
-
-
-
+imagesGallery.appendChild(elLi);
