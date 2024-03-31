@@ -30,6 +30,7 @@ const images = [
 
 const imagesGallery = document.querySelector('.gallery');
 
+
 images.forEach(image => {
 
 const elLi = document.createElement('li');
