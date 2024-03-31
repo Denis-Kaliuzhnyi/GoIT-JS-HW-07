@@ -178,3 +178,52 @@ p {
 }
 /*END TASK-5*/
 
+/*TASK-6*/
+#controls {
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background: #f6f6fe;
+}
+
+.input {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  width: 150px;
+  height: 40px;
+}
+
+.btn-create {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #4e75ff;
+}
+.btn-destroy {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #ff4e4e;
+}
+
+#boxes {
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 160px;
+  background: #f6f6fe;
+}
+
+.box {
+  width: 16px;
+height: 16px;
+background: #799cd2;
+}
+/*END TASK-6*/
