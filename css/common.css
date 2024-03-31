@@ -17,7 +17,6 @@ body {
 }
 
 /*TASK-1*/
-
 #categories {
   list-style: none;
   padding: 0;
@@ -66,11 +65,9 @@ h2 {
   height: 312px;
   background: #f6f6fe;
 }
-
 /*END TASK-1*/
 
 /*TASK-2*/
-
 .gallery {
   display: flex;
   width: 1128px;
@@ -83,18 +80,16 @@ img {
   height: 300px;
   margin-right: 24px;
 }
-
 /*END TASK-2*/
 
 /*TASK-3*/
-
 #name-input {
-font-family: var(--font-family);
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.04em;
-color: #2e2f42;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 #name-output {
@@ -108,3 +103,48 @@ color: #2e2f42;
 /*END TASK-3*/
 
 /*TASK-4*/
+.login-form {
+  width: 408px;
+  padding: 24px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 72px;
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  
+}
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  width: 360px;
+  height: 40px;
+}
+
+.btn {
+  background: #4e75ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 86px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  margin-top: 16px;
+}
+/*END TASK-4*/
