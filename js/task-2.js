@@ -16,7 +16,7 @@ const images = [
 const imagesGallery = document.querySelector(".gallery");
 const container = document.createDocumentFragment();
 
-images.forEach((image) => {
+const allPictures = images.forEach((image) => {
   const elLi = document.createElement("li");
   const elImage = document.createElement("img");
 
@@ -29,5 +29,6 @@ images.forEach((image) => {
 
 imagesGallery.append(container);
 
+// виходить, потрібно створити ще один контейнер, щоб до нього все зібрати, а потім вже його вставляти у ДОМ-дерево?*
 // Щось я пропустив "const container = document.createDocumentFragment();" - цей момент (я всі лекції та практику передивляюсь), а в якій лекції було про це???*
 
