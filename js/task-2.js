@@ -29,7 +29,7 @@ const images = [
 ];
 
 const imagesGallery = document.querySelector(".gallery");
-// тут я заціпаюсь за ul
+// тут я зачіпаюсь за ul
 
 images.forEach((image) => {
   const elLi = document.createElement("li");
