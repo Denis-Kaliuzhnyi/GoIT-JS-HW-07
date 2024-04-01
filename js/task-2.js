@@ -31,7 +31,7 @@ const images = [
 const imagesGallery = document.querySelector(".gallery");
 // тут я зачіпаюсь за ul
 
-images.forEach((image) => {
+const allPictures = images.map( image => {
   const elLi = document.createElement("li");
   // додаю елемент li
   const elImage = document.createElement("img");
@@ -48,4 +48,6 @@ images.forEach((image) => {
   // додаю елемент li до ul
 });
 
-// щось я не можу зродзуміти як додати до DOM-дерева?
+imagesGallery.append(allPictures)
+// дадаю значення (едементи) allPictures до imagesGallery (ul)
+
