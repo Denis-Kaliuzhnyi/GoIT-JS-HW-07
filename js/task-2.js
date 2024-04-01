@@ -11,43 +11,23 @@ const images = [
     url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     alt: "Group of Horses Running",
   },
-  // {
-  //   url:
-  //     'https://images.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //   alt: 'Elephant Beside on Baby Elephant',
-  // },
-  // {
-  //   url:
-  //     'https://images.pexels.com/photos/37833/rainbow-lorikeet-parrots-australia-rainbow-37833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //   alt: 'Blue Geeen and Orange Parrot',
-  // },
-  // {
-  //   url:
-  //     'https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //   alt: 'Zebras on Zebra',
-  // },
 ];
 
 const imagesGallery = document.querySelector(".gallery");
-// тут я зачіпаюсь за ul
+const container = document.createDocumentFragment();
 
-const allPictures = images.map( image => {
+images.forEach((image) => {
   const elLi = document.createElement("li");
-  // додаю елемент li
   const elImage = document.createElement("img");
-  // додаю елемент img
 
   elImage.src = image.url;
-  // визначаю посилання на IMG
   elImage.alt = image.alt;
-  // визначаю значення alt
 
   elLi.appendChild(elImage);
-  // додаю картинку до li
-  allPictures.appendChild(elLi);
-  // додаю елемент li до ul
+  container.appendChild(elLi);
 });
 
-imagesGallery.append(allPictures)
-// дадаю значення (едементи) allPictures до imagesGallery (ul)
+imagesGallery.append(container);
+
+// Щось я пропустив "const container = document.createDocumentFragment();" - цей момент (я всі лекції та практику передивляюсь), а в якій лекції було про це???*
 
