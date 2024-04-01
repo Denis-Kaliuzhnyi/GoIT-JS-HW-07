@@ -29,15 +29,23 @@ const images = [
 ];
 
 const imagesGallery = document.querySelector(".gallery");
+// тут я заціпаюсь за ul
 
 images.forEach((image) => {
   const elLi = document.createElement("li");
+  // додаю елемент li
   const elImage = document.createElement("img");
+  // додаю елемент img
 
   elImage.src = image.url;
+  // визначаю посилання на IMG
   elImage.alt = image.alt;
+  // визначаю значення alt
 
   elLi.appendChild(elImage);
+  // додаю картинку до li
+  imagesGallery.appendChild(elLi);
+  // додаю елемент li до ul
 });
 
-imagesGallery.appendChild(elLi);
+// щось я не можу зродзуміти як додати до DOM-дерева?
