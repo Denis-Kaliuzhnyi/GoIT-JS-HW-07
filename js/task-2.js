@@ -44,7 +44,7 @@ const allPictures = images.map( image => {
 
   elLi.appendChild(elImage);
   // додаю картинку до li
-  imagesGallery.appendChild(elLi);
+  allPictures.appendChild(elLi);
   // додаю елемент li до ul
 });
 
